@@ -264,7 +264,6 @@ a {
 }
 .white-block{
 	font-family: 'exo medium';
-	height:700px;
 	background-color:#F6F5F3;
 }
 .little-text{
@@ -299,7 +298,57 @@ box-shadow:1px 1px 20px 10px #E2E1E2;
 	padding-top:60px;
 	padding-bottom:10px;
 }
+.block-blue{
+	z-index:0 ;
+	background-color: #323969;
+	width: 100%;
+	text-align: center
 
+}
+.input{
+	margin-right: 40px;
+	border:1px solid #6B7093;
+	padding: 10px;
+	padding-left: 20px;
+	width: 15%;
+	background-color: #474D78;
+	color:white;
+}
+.submit{
+	padding: 10px;
+	width: 18%;
+	border: none;
+	cursor: pointer;
+	color:#FFFFFF;
+	background-color: #FF6D6D;
+}
+.input-block{
+
+	padding-bottom: 30px;
+}
+.text-block-blue{
+	color:#B8B9C3;
+	padding-bottom: 130px;
+}
+.terms{
+	text-decoration:underline;
+}
+.terms:hover{
+	color:#C35062;
+	cursor: pointer;
+}
+.submit-line{
+	position: relative;
+}
+.line{
+	background-image: url("https://cdn1.savepice.ru/uploads/2018/9/19/fafad3572a318eb4d978cebeaea9ab45-full.png");
+	position: absolute;
+	z-index: 1;
+	width: 100px;
+	height: 60px;
+	left: 72%;
+	margin-top:-100px;
+}
 
 
 
@@ -311,7 +360,7 @@ box-shadow:1px 1px 20px 10px #E2E1E2;
 .white-block{
 	width:100%;
 	}
-	.comp{
+	.comp, .line{
 		display:none
 	}
 .block{
@@ -319,6 +368,22 @@ box-shadow:1px 1px 20px 10px #E2E1E2;
 	background-image:linear-gradient(145deg, #ECECEC 59%, #FB8686 41%);
 	width:100%;
 }
+.input, .submit{
+	display: flex;
+	flex-direction: column;
+}
+.submit{
+    margin-left: auto;
+    margin-right: auto;
+	width: 50%;
+}
+.input{
+	margin-bottom: 5px;
+	margin-left: auto;
+    margin-right: auto;
+	width: 50%;
+}
+
 .mini-menu{
 	display:block;
 	background-image:linear-gradient(145deg, #FB8686 50%, #978E9A 50%);
@@ -335,7 +400,6 @@ box-shadow:1px 1px 20px 10px #E2E1E2;
 	margin-top:100px;
 }
  .black-block{
-	height:700px;
 	 background-image:linear-gradient(145deg, #FB8686 50%, #978E9A 50%);
 	width:100%
  }
@@ -366,7 +430,7 @@ box-shadow:1px 1px 20px 10px #E2E1E2;
 	margin-bottom:0px;
 	text-align:center;
 	margin-left:10px;
-	margin-top:180px;
+	margin-top:230px;
 }
 
 .container-computer{
@@ -426,8 +490,13 @@ box-shadow:1px 1px 20px 10px #E2E1E2;
 .media-href{
 	color:white;
 }
-
-
+.white-block{
+	background-image:linear-gradient(8deg, #FB8686 50%, #978E9A 40%);
+}
+.little-text, .text-mini-new, .text-text{
+	color:white;
+	margin-bottom: 0px;
+}
 }
 
 @media screen and (max-width: 600px){
@@ -460,6 +529,9 @@ box-shadow:1px 1px 20px 10px #E2E1E2;
 }
 .text-black{
 	font-size:12px;
+}
+.black-block{
+	height:700px;
 }
 }
 
