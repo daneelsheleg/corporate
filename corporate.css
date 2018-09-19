@@ -98,7 +98,6 @@ a {
 	background-color:#FFFFFF;
 	font-family: 'exo medium';
 	margin: auto;
-	height:600px;
 	display:flex;
 	flex-direction:row;
 }
@@ -131,9 +130,10 @@ a {
 	background: linear-gradient(146deg, #ECECEC 60.5%, #FB8686 40%)
 }
 .mini-menu{
-	background-image:url(image/cupandpen.png);
 	width:1349px;
-	margin: auto;
+	background-image:url(image/cupandpen.png);
+	margin-left: auto;
+	margin-right:auto;
 	height:675px;
 }
 .text-mini{
@@ -160,10 +160,9 @@ a {
 	font-size:22px;
 	font-weight:bold;
 	color:#282828;
-	text-align:center
+	justify-content:center;
 }
 .text_center{
-	margin-left:190px;
 	margin-right:140px;
 	padding-bottom:20px;
 }
@@ -174,15 +173,15 @@ a {
 	font-family: 'exo medium';
 	display:flex;
 	color:#9A9998;
+	justify-content: center;
 }
-.donec_text{
+.donec_text, .donec_text_donec{
 	text-align:center;
-	margin-left:160px;
-	margin-right:50px;
 	line-height:20px;
 }
-.donec_text-donec, .donec_text_donec{
+.donec_text-donec{
 	margin-right:60px;
+	margin-left:60px;
 	text-align:center;
 	line-height:20px;
 }
@@ -191,7 +190,7 @@ a {
 }
 .container-computer{
 	background-image:linear-gradient(225deg, #FFFFFF 65%, #FB8686 55%);
-	height:550px;
+
 	width:1349px;
 	margin:auto;
 	display:flex
@@ -205,7 +204,8 @@ a {
 	margin-right:50px
 }
 .text-mackbook{
-	margin-top:130px;
+	margin-top:120px;
+	margin-bottom:120px;
 	font-family: 'exo medium';
 	color:#FF6E6E;
 }
@@ -213,9 +213,9 @@ a {
 	line-height:25px;
 }
 .black-block{
+	width:1349px;
 	background-image:url(image/black-miror.png);
 	height:600px;
-	width:1349px;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -256,11 +256,48 @@ a {
 	  font-family: 'Exo-Regular-italic';
 }
 .logo-block{
-	padding-left:15%
+	text-align:center;
 }
 .firm{
-	margin-right:65px;
+	margin-right:100px;
 	filter: grayscale(10%)
+}
+.white-block{
+	font-family: 'exo medium';
+	height:700px;
+	background-color:#F6F5F3;
+}
+.little-text{
+	text-align:center;
+	margin-bottom:100px;
+}
+.text_menu{
+	text-align:center;
+	font-size:40px;
+	font-family: 'exo medium';
+	padding-bottom:50px;
+}
+.text-text{
+	color:#9A9998;
+	line-height:25px;
+}
+.comp{
+background-image:url(image/comp.png);
+border-radius:5px;
+height:350px;
+width:770px;
+background-size:cover;
+background-repeat:no-repeat;
+margin-left:auto;
+margin-right:auto;
+box-shadow:1px 1px 20px 10px #E2E1E2;
+}
+.text-mini-new{
+	text-align:center;
+	font-family: 'exo medium';
+	color:#FF7878;
+	padding-top:60px;
+	padding-bottom:10px;
 }
 
 
@@ -270,28 +307,23 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
+.white-block{
+	width:100%;
+	}
+	.comp{
+		display:none
+	}
 .block{
 	display:block;
 	background-image:linear-gradient(145deg, #ECECEC 59%, #FB8686 41%);
 	width:100%;
-	height:500px;
 }
 .mini-menu{
 	display:block;
 	background-image:linear-gradient(145deg, #FB8686 50%, #978E9A 50%);
 	width:100%;
-	height:450px;
+	height:300px;
 }
 .donec_text{
 	color:white;
@@ -300,8 +332,7 @@ a {
 .mackbook{
 	background-image:https://cdn1.savepice.ru/uploads/2018/9/16/16fc937aa786fb5c763edddf8074bd20-full.png;
 	width:50px;
-	height:30px;
-	
+	margin-top:100px;
 }
  .black-block{
 	height:700px;
@@ -314,9 +345,8 @@ a {
  .text-black{
 	 padding:10px;
 		border:solid white;
-	 	margin-right:80px;
-		margin-left:10px;
-		margin-top:25px;
+		margin-top:10px;
+		font-size:14px;
  }
  .bottom, .black{
 	 color:white;
@@ -333,14 +363,15 @@ a {
 	margin-left:auto;
 }
 .text-mackbook{
+	margin-bottom:0px;
 	text-align:center;
-	margin-left:10px
+	margin-left:10px;
+	margin-top:180px;
 }
 
 .container-computer{
 	background-image:linear-gradient(10deg, #FB8686 50%, #978E9A 50%);
 	width:100%;
-	height:500px;
 }
 
 .text-mini{
@@ -396,30 +427,18 @@ a {
 	color:white;
 }
 
+
 }
 
 @media screen and (max-width: 600px){
-.macbook{
+.mackbook, .macbook{
 	display:none;
 }
-.text-mackbook{
-	margin-top:30px;
-}
-.mini-menu{
-	height:300px;
-}
+
 .text-over{
 	line-height:15px;
 }
-	.block{
-		padding-bottom:40px
-	}
-	.mini-menu{
-	height:500px;
-}
-.container-computer{
-		height:400px;
-}
+
 }
 @media screen and (max-width: 400px){
 .img{
@@ -430,20 +449,19 @@ a {
 .text-over{
 	line-height:15px;
 }
-	.block{
-		padding-bottom:120px
-	}
-	.mini-menu{
-	height:500px;
-}
-.container-computer{
-		height:600px;
-}
-.black-block{
-height:900px;
-}
+.text-mackbook{
+	margin-top:20px;
 }
 
+}
+@media screen and (max-width: 300px){
+.text-mackbook{
+	margin-top:100px;
+}
+.text-black{
+	font-size:12px;
+}
+}
 
 
 
