@@ -238,6 +238,9 @@ a {
 
 	
 }
+.column-class{
+	display:none;
+}
 .text-black{
 	text-align:center;
 	
@@ -502,10 +505,21 @@ margin-top:-53px;
 .text-black{
 	margin:0px;
 }
+ .column-class{
+	display:block;
+	color:white;
+	margin-bottom:20px;
+ }
 .img{
-	margin: 0px;
+	display:flex;
+	flex-direction:column;
+	margin-left:auto;
+	margin-right:auto;
+ }
+.donec{
+	background-color:#FB8686;
 }
-	.comp, .line, .line-text, .awesome{
+	.comp, .line, .line-text, .awesome, .over-absolute{
 		display:none
 	}
 .text-block-blue{
@@ -515,7 +529,7 @@ margin-top:-53px;
 	padding-bottom: 100px;
 	text-align: center;
 	display:block;
-	background-image:linear-gradient(145deg, #ECECEC 59%, #FB8686 41%);
+	background-color:#978E9A;
 	width:100%;
 }
 .input, .submit{
@@ -536,17 +550,16 @@ margin-top:-53px;
 
 .mini-menu{
 	display:block;
-	background-image:linear-gradient(145deg, #FB8686 50%, #978E9A 50%);
+	background-image:linear-gradient(0deg, #FB8686 50%, #978E9A 50%);
 	width:100%;
-	height:300px;
+	height:650px;
 }
 .donec_text{
-	color:white;
-	margin:auto
+	display:none;
 }
 
  .black-block{
-	 background-image:linear-gradient(145deg, #FB8686 50%, #978E9A 50%);
+	 background-color:#978E9A ;
 	width:100%
  }
  .square{
@@ -562,7 +575,7 @@ margin-top:-53px;
 	 color:white;
  }
 .black-square{
-
+	 background-color:#978E9A ;
 	padding-top:20px;
 	display:flex;
 	flex-direction:column;
@@ -577,9 +590,11 @@ margin-top:-53px;
 	text-align:center;
 	margin-top:0px;
 }
-
+.mackbook-new{
+	color:white;
+}
 .container-computer{
-	background-image:linear-gradient(10deg, #FB8686 50%, #978E9A 50%);
+	background-image:linear-gradient(180deg, #FB8686 50%, #978E9A 50%);
 	width:100%;
 	display:block;
 }
@@ -592,7 +607,7 @@ margin-top:-53px;
 	display:none;
 }
 .text-over{
-	color:#282828;
+	color:#ffffff;
 }
 .block-in-block{
 	padding-top:100px;
@@ -637,7 +652,7 @@ margin-top:-53px;
 	color:white;
 }
 .white-block{
-	background-image:linear-gradient(8deg, #FB8686 50%, #978E9A 40%);
+	background-color:#FB8686;
 }
 .little-text, .text-mini-new, .text-text{
 	color:white;
@@ -801,7 +816,6 @@ ul.men > li:hover > ul.submenu {
 }
 @media screen and (max-width: 400px){
 .img{
-	padding-right:20px;
 	margin-left:auto;
 	margin-right:auto
 }
@@ -812,13 +826,10 @@ ul.men > li:hover > ul.submenu {
 }
 @media screen and (max-width: 300px){
 .text-mackbook{
-	margin-top:100px;
+	padding-top:100px;
 }
 .text-black{
 	font-size:12px;
-}
-.black-block{
-	height:700px;
 }
 }
 
